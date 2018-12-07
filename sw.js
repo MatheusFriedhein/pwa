@@ -7,9 +7,7 @@ self.addEventListener('install', function(e) {
        '/pwa/index.js',
        '/pwa/style.css',
        '/pwa/images/fox1.jpg',
-       '/pwa/images/fox2.jpg',
-       '/pwa/images/fox3.jpg',
-       '/pwa/images/fox4.jpg'
+       '/pwa/images/fox2.jpg'
      ]);
    })
  );

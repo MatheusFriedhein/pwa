@@ -1,0 +1,31 @@
+{
+    "name": "Animati PACS",
+    "short_name": "Animati PACS",
+    "theme_color": "#3c3c3c",
+    "background_color": "#3c3c3c",
+    "display": "standalone",
+    "Scope": "/",
+    "start_url": "index.html",
+    "icons": [
+	{
+	    "src": "image/android-chrome-512x512.png",
+	    "sizes": "512x512",
+	    "type": "image/png"
+	},
+	{
+	    "src": "image/android-chrome-192x192.png",
+	    "sizes": "192x192",
+	    "type": "image/png"
+	},
+	{
+	    "src": "image/favicon-32x32.png",
+	    "sizes": "32x32",
+	    "type": "image/png"
+	},
+	{
+	    "src": "image/favicon-16x16.png",
+	    "sizes": "16x16",
+	    "type": "image/png"
+	}
+    ]
+}

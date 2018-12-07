@@ -8,7 +8,7 @@ function randomValueFromArray(array) {
 
 setInterval(function() {
   let randomChoice = randomValueFromArray(images);
-  imgElem.src = 'images/' + randomChoice + '.jpg';
+  imgElem.src = randomChoice + '.jpg';
 }, 2000)
 
 // Register service worker to control making site work offline
@@ -20,7 +20,7 @@ setInterval(function() {
 }*/
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(function(reg) {
+    navigator.serviceWorker.register('/sw.js').then(function(reg) {
 	console.log("Service registrado com sucesso");
     }).catch(function(err) {
 	console.log("Erro ao registrar service :", err);

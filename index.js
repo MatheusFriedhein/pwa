@@ -20,7 +20,7 @@ setInterval(function() {
 }*/
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js').then(function(reg) {
+    navigator.serviceWorker.register('/pwa/sw.js').then(function(reg) {
 	console.log("Service registrado com sucesso");
     }).catch(function(err) {
 	console.log("Erro ao registrar service :", err);

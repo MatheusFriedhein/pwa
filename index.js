@@ -64,7 +64,8 @@ const isIos = () => {
     const userAgent = window.navigator.userAgent.toLowerCase();
     //var safari = /safari/.test( userAgent );
     console.log('User iOS : ', /iphone|ipad|ipod/.test(userAgent));
-    return /iphone|ipad|ipod/.test(userAgent);
+    //return /iphone|ipad|ipod/.test(userAgent);	
+    return true;
 }
 
 // Detects if device is in standalone mode

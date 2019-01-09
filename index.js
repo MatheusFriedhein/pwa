@@ -58,3 +58,24 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+
+// Detects if device is iOS
+const isIos = () => {
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    //var safari = /safari/.test( userAgent );
+    console.log('User iOS : ', /iphone|ipad|ipod/.test(userAgent));
+    return /iphone|ipad|ipod/.test(userAgent);
+}
+
+// Detects if device is in standalone mode
+const isInStandaloneMode = () => ('standalone' in window.navigator) && (window.navigator.standalone);
+
+// Checks if should display install popup notification:
+if (isIos() && !isInStandaloneMode()) {
+    var x = document.getElementById("infoIos");
+    x.className = "show";
+    setTimeout(function() {
+	x.className = x.className.replace("show", "");
+    }, 3000);
+}
+
